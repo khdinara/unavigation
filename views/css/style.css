@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logoOfNav {
+    cursor: pointer;
+    max-width: 11%;
+    margin-right: auto;
+}
+
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 7px;
+    background-color: #343a40;
+    color: white;
+    display: block;
+}
+body, html {
+    height: 100%;
+}
+header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #343a40;
+    align-items: center;
+    font-color: white;
+}
+
+#mainWord{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: white;
+}
+
+.aboutUS{
+    margin-top: 100px;
+}
+
+.yellowUnderline{
+    text-decoration: underline;
+    text-decoration-color:#ffde59;
+    text-decoration-thickness: 3px;
+}
+
+.title {
+    color: grey;
+}
+
+.signbtn{
+    margin-bottom:10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li, .navbarItems{
+    color: white;
+}
+
+
+
+.navBar li{
+    display: flex;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+
+.navBar li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.navBar li a:hover{
+    color: #ffde59;
+}
+
+.typeB{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: grey;
+
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;}
+
+.signbtn1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: rgb(255, 222, 89);
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.signbtn1:hover{
+    background-color: rgb(255, 255, 255);
+}
+.moreButton{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: auto;
+    background-color: rgb(255, 222, 89);
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.closeButton{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 0 2% 2% 70%;
+    background-color: rgb(255, 222, 89);
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.closeButton:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+#aboutUS{
+    font-size:30px;
+    font-weight: bold;
+}
+
+.moreButton:hover{
+    background-color: rgb(255, 255, 255);
+}
+.pictureInMain{
+    position: relative;
+    padding-top: 100px;
+}
+
+.contentOfUniver{
+    text-align: center;
+    margin: 5%;
+}
+.textAboutCh {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    position: absolute;
+    bottom: 150px;
+    left: 600px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 100px;
+    text-align: center;
+}
+.theChoiceText{
+    text-align: justify-all;
+    margin: auto;
+}
+
+
+.lineOfNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+    color: grey;
+
+}
+
+
+.container{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+
+}
+
+.containerSignIn{
+    margin-left: 0px;
+
+}
+
+.register{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    font-size: 16px;
+    margin: 0% 30% 30% 30%;
+    border: 15px solid white;
+    padding: 2px;
+    background-color: white;
+}
+
+.containerSignIn{
+    margin-left: 0px;
+
+}
+
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.registerbtn {
+    background-color: grey;
+    color: white;
+    padding: 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+
+
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.registerbtn {
+    background-color: grey;
+    color: white;
+    padding: 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+}
+
+#NU{
+    margin-left: 40px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.naz{
+    position:relative;
+    left:400px;
+    margin-top: -260px;
+    margin-right: 450px;
+}
+
+.university{
+    text-decoration: underline;
+    text-decoration-color:#ffde59;
+    text-decoration-thickness: 3px;
+}
+
+.moreButton{
+    position:relative;
+    top:50px;
+    left:700px;
+}
+
+#KBTU{
+    margin-left: 40px;
+    margin-top: 100px;
+
+}
+
+#KAZNU{
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+#AstanaIt{
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+#ENU{
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.pagination{
+    color: #1d2327;
+
+}
+
+.pass h2{
+    font-size: 24px;
+}
+.pass li{
+    font-size: 16px;
+    color: gray;
+}

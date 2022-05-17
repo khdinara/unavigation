@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Universities</title>
+    <link rel="shortcut icon" href="picture/logo1.png" type="image/png" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "css/style.css"/>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<body>
+<style>
+    body {
+        background-color: #d5d4d4;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<%-
+    include('navbar.ejs')
+%>
+<br><br><br>
+
+
+<form name = "myform" id = "reg-form" method="post" action="/registration" onsubmit = "return validate()">
+    <div class="register" >
+        <div style="margin-left: 10%;margin-right: 10%;">
+        <h2>Register</h2>
+        <p>Please fill in this form to create an account.</p>
+
+        <hr style="margin-left:0; width:100%; height:3px; border-width:0; color:grey; background-color:grey"><br>
+
+        <label for="name"><b>First Name</b></label>
+        <input type="text" placeholder="First Name" name="name" id="name" value="" oninput="checkName()" style="margin-left: 0px; width: auto; border:none; " required>
+            <span id = "nameMessTemp1" style="color:red"> </span><br><br>
+
+        <label for="LastName"><b>Last Name</b></label>
+            <input type="text" placeholder="Last Name" name="LastName" id="LastName" value="" oninput="checkLName()" style="margin-left: 0px; width: auto; border:none;" required>
+                <span id = "lastNameMessTemp1" style="color:red"> </span><br><br>
+
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" value="" oninput="checkEmail()" style="margin-left: 0px; width: auto; border:none;">
+            <span id = "emailMessTemp1" style="color:red"> </span><br><br>
+        
+            <label for="email"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" name="username" id="username" value="" oninput="checkEmail()" style="margin-left: 0px; width: auto; border:none;">
+                <span id = "emailMessTemp1" style="color:red"> </span><br><br>
+
+
+        <label for="psw-repeat"><b>Password</b></label>
+        <input type="password" placeholder="Password" name="password" id="psw-repeat" oninput="checkPassword(), validatePassword    ()" style="margin-left: 0px;width: auto; border:none;" >
+            <span id = "passMessTemp1" style="color:red"> </span><br><br>
+
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+
+        <input type="password" placeholder="Repeat Password" name="password1" id="psw1-repeat" oninput="checkPasswordRepeat(), validatePasswordRepeat()" style="margin-left: 4px; width: auto; border:none;" >
+            <span id = "passMessTemp2" style="color:red"> </span><br>
+        <hr style="margin-left:0; margin-top:30px; width:100%; height:3px; border-width:0; color:grey; background-color:grey">
+        <div class="pass">
+       </div>
+            <script>
+                let ol = document.querySelector('.pass');
+
+                let h2 = document.createElement('h5');
+                h2.innerHTML = 'Password must include following rules:';
+                h2.className = 'text'; //uppercase
+
+                let l1 = document.createElement('li');
+                l1.innerHTML = 'Add capital letter';
+                l1.id = 'capital'; //uppercase
+
+                let l2 = document.createElement('li');
+                l2.innerHTML = 'Add lowercase letter';
+                l2.id = 'smallLetter'; //lowercase
+
+                let l3 = document.createElement('li');
+                l3.innerHTML = 'Add symbols letter';
+                l3.id = 'symbol'; //special
+
+                let l4 = document.createElement('li');
+                l4.innerHTML = 'Add numbers ';
+                l4.id = 'number'; //number
+
+                let l5 = document.createElement('li');
+                l5.innerHTML = 'Length must be more than 8';
+                l5.id = 'length'; //length
+
+                let l6 = document.createElement('li');
+                l6.innerHTML = 'Match two passwords';
+                l6.id = 'repeat'; //length
+
+                ol.appendChild(h2);
+                ol.appendChild(l1);
+                ol.appendChild(l2);
+                ol.appendChild(l3);
+                ol.appendChild(l4);
+                ol.appendChild(l5);
+                ol.appendChild(l6);
+            </script>
+            <button class="typeB" style="background-color: grey; margin-left: 40%">Sign Up</button>
+            <div class="containerSignIn">
+            <p>Already have an account? <a href ="/signin">Sign in </a> or <a href ="/home">Go back</a></p>
+        </div>
+        </div>
+        </div>
+</form>
+
+    <br><br><br><br>
+    <footer id = "foot">
+        <p>Authors: Khalidullayeva Dinora & Kaiyrkhan Nurym<br>
+            <a style="color:white;" href="nis.dinara2002@gmail.com">nis.dinara2002@gmail.com</a><br>
+            <a style="color:white;" >Telephone number: 87074122070</a><br>
+            <a style="color:white;" >Telephone number: 87026257905 </a><br>
+            <a style="color:white;" >Address: Astana IT university</a><br> </p>
+    </footer>
+<script src="main.js">
+</script>
+</body>
+</html>
