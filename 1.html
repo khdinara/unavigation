@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+</head>
+<body>
+
+<div id="modal"></div>
+<div>
+    <div id="triggerModal">
+        <button modal="legal" >
+            Legal
+        </button>
+    </div>
+</div>
+
+
+
+<div id = "timechecker"></div>
+
+
+<div id = "text1">
+<form onsubmit="sayResult()">
+    <input type="text" id = "text">
+</form></div>
+
+<script>
+    let parent = document.querySelector('#text1');
+    let l1 = document.createElement('li');
+    l1.innerHTML = 'gg';
+    l1.id = 'l22';
+
+    let l2 = document.createElement('li');
+    l2.innerHTML = '11';
+    l2.id = 'l22';
+
+    let l3 = document.createElement('li');
+    l3.innerHTML = '21';
+    l3.id = 'l22';
+
+    parent.appendChild(l1);
+    parent.appendChild(l2);
+    parent.appendChild(l3);
+</script>
+
+<script >
+    let text1 = document.getElementById("text1").textContent;
+    let timer; // пока пустая переменная
+    let x = 10; // стартовое значение обратного отсчета
+    countdown(); // вызов функции
+    function countdown(){  // функция обратного отсчета
+        document.getElementById('timechecker').innerHTML = x;
+        x--; // уменьшаем число на единицу
+        if (x<0){
+            sayResult();
+            document.write(" :Time is up!");
+
+        }
+        else {
+            timer = setTimeout(countdown, 1000);
+        }
+    }
+
+    function sayResult(){
+        var text = document.getElementById("text").value;
+        if(text == text1){
+            document.write("You win");
+        }
+        else{
+            document.write("You lose");
+        }
+    }
+
+</script>
+<script src="university.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unavigation</title>
+    <link rel="shortcut icon" href="picture/logo1.png" type="image/png" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel ="stylesheet" href = "/css/style.css"/>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<body style="margin: 0px">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<header class = "navBar">
+    <img class ="logoOfNav" src = "picture/logo2.png" alt = "logo">
+    <nav class="navbar navbar-dark bg-dark"> <!--navbar dark means dark colors and bg dark means highlighting text by grey -->
+        <ul class= "lineOfNav">
+            <li><a class="navbarItems" href = main.html >Home</a></li>
+            <li><a class="navbarItems" href = "#mainWord" >About Us</a></li>
+            <li><a class="navbarItems" href = "#foot">Contact</a></li>
+            <li><a class="navbarItems" href = universities.html>Universities</a></li>
+        </ul>
+    </nav>
+    <a class = "signbtn" href = "registration.html"><button class="signbtn1">Sign in</button></a>
+</header>
+
+<div id="mainCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="1200">
+            <img src="picture/1.png" class="d-block w-100" alt="slogan about motivation">
+        </div>
+        <div class="carousel-item" data-interval="1200">
+            <img src="picture/2.png" class="d-block w-100" alt="slogan about motivation">
+        </div>
+        <div class="carousel-item" data-interval="1200">
+            <img src="picture/3.png" class="d-block w-100" alt="slogan about motivation">
+        </div>
+        <div class="carousel-item">
+            <img src="picture/4.png" class="d-block w-100" alt="slogan about motivation">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </button>
+</div>
+
+<div id = "mainWord">
+    <div id = "aboutUS">
+    <p style="font-size:30px">
+        <b ></b>
+    </p>
+    </div>
+
+    <script type = "text/javascript">
+        var i = 0, aboutUS;
+        aboutUS = "OUR MISSION";
+
+        function typing(){
+            if(i < aboutUS.length){
+                document.getElementById("aboutUS").innerHTML += aboutUS.charAt(i);
+                i++;
+                setTimeout(typing, 100);
+            }
+        }
+
+        typing();
+    </script>
+
+    <div>
+    <p style="font-size:30px">
+        to help with <a id = "yellowWord" style ="color:#ffde59; font-size:30px; "> right choice </a> university</a> </p>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+
+            <i class="fas fa-check fa-3x" style="color: #ffde59; margin-left: 50%;"></i>
+        </div>
+        <div class="col-sm">
+            <i class="fas fa-check fa-3x" style="color: #ffde59;margin-left: 50%;"></i>
+        </div>
+        <div class="col-sm">
+
+            <i class="fas fa-check fa-3x" style="color: #ffde59;margin-left: 50%;"></i>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h3 style="text-align: center;" class="yellowUnderline">Relevance</h3>
+            <p style="text-align: center;">
+                Factors describe university ranking, reputation, potential outcomes
+                and benefits for students, as well as geographical location and costs for student
+            </p>
+        </div>
+        <div class="col-sm">
+            <h3 style="text-align: center;" class="yellowUnderline">Idea</h3>
+            <p style="text-align: center;">
+                Institutional factors describe university ranking, reputation, potential outcomes and
+                benefits for students, as well as geographical location and costs for student
+            </p>
+        </div>
+        <div class="col-sm">
+            <h3 style="text-align: center;" class="yellowUnderline">Purpose</h3>
+            <p style="text-align: center;">
+                Whether you're a school leaver or a mature student, university opens up
+                a host of new opportunities and lets you take control of your future.
+            </p>
+        </div>
+    </div>
+</div>
+
+    <div class="pictureInMain">
+        <img src="picture/readingBook.png" style="width:80%">
+        <div class="textAboutCh">
+            <h4 style ="text-decoration: underline; text-decoration-color:#ffde59; text-decoration-thickness: 3px;">The choice</h4>
+            <div class = "theChoiceText">
+            <p>The choice of an institution of higher learning such as a university is significant
+                in the lives of a student because it shapes the future of the student. It is therefore
+                important that the choice is made carefully and after considering all factors.</p>
+            </div>
+        </div>
+    </div>
+
+
+<div class="grid-posts">
+    <div class="container" style="padding-bottom: 10%;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="picture/NU.png" class="card-img-top" id="pic1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nazarbayev University</h5>
+                        <p class="card-text" id="temp1"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="picture/Astanait.jpg" class="card-img-top" id="pic2">
+                    <div class="card-body">
+                        <h5 class="card-title">Astana IT University</h5>
+                        <p class="card-text" id="temp2"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="picture/KBTU.jpg" class="card-img-top" id="pic3">
+                    <div class="card-body">
+                        <h5 class="card-title">KBTU</h5>
+                        <p class="card-text" id="temp3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#pic1').mouseenter(function(){
+        $('#temp1').replaceWith('<p class="card-text" id="new1">committed to excellence in research and education; our institutions core values are academic freedom, institutional autonomy</p>');
+        $('#new1').hide().slideDown(500);
+    });    
+    $('#pic1').mouseleave(function(){
+        $('#new1').slideUp(500, function(){
+            $('#new1').replaceWith('<p class="card-text" id="temp1"></p>');
+        });
+    });
+    $('#pic2').mouseenter(function(){
+        $('#temp2').replaceWith('<p class="card-text" id="new2">committed to excellence in research and education; our institutions core values are academic freedom, institutional autonomy</p>');
+        $('#new2').hide().slideDown(500);
+    });    
+    $('#pic2').mouseleave(function(){
+        $('#new2').slideUp(500, function(){
+            $('#new2').replaceWith('<p class="card-text" id="temp2"></p>');
+        });
+    });
+    $('#pic3').mouseenter(function(){
+        $('#temp3').replaceWith('<p class="card-text" id="new3">Committed to excellence in research and education; in research and education in research and education our institutions core values are academic freedom, institutional autonomy</p>');
+        $('#new3').hide().slideDown(500);
+    });    
+    $('#pic3').mouseleave(function(){
+        $('#new3').slideUp(500, function(){
+            $('#new3').replaceWith('<p class="card-text" id="temp3"></p>');
+        });
+    });
+</script>
+
+    <footer id = "foot">
+        <p>Authors: Khalidullayeva Dinora & Kaiyrkhan Nurym<br>
+            <a style="color:white;" href="nis.dinara2002@gmail.com">nis.dinara2002@gmail.com</a><br>
+        <a style="color:white;" >Telephone number: 87074122070</a><br>
+            <a style="color:white;" >Telephone number: 87026257905 </a><br>
+        <a style="color:white;" >Address: Astana IT university</a><br> </p>
+    </footer>
+</body>
+</html>
